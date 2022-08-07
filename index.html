@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Modal</title>
+  </head>
+  <body>
+    <!-- global container -->
+    <div class="flex items-center justify-center min-h-screen min-w-screen">
+      <!-- modal -->
+      <div
+        class="max-w-max w-screen md:w-68 md:h-90 mx-7 flex shadow shadow-2xl flex-col md:flex-row space-y-6 md:space-x-8 md:space-y-0 p-10 rounded-2xl"
+      >
+        <!-- image -->
+        <img
+          class="md:self-start self-center pt-2 md:w-48 md:h-42 w-64 h-40 transform hover:scale-125 duration-200"
+          src="./images/headphone.png"
+        />
+        <!-- info -->
+        <div class="pt-2 flex flex-col">
+          <span
+            class="max-w-max bg-black text-white text-xs rounded-2xl px-2 font-thin"
+            >Free shipping</span
+          >
+          <p
+            class="flex flex-wrap capitalize space-xl tracking-wide mt-2 mb-8 inline-block pr-10 w-80"
+          >
+            razer kraken kitty edt gaming headset quartz
+          </p>
+          <span class="line-through text-xs">$700</span>
+          <span class="font-extrabold text-2xl my-2">$599</span>
+          <span class="text-xs text-gray-400 font-sans"
+            >The offer is valid until April 3 or as long as stock lasts!</span
+          >
+          <!-- cart button container -->
+          <div class="bg-blue-700 rounded-lg pb-1.5 mt-5">
+            <button class="w-full bg-blue-500 rounded-lg text-white py-2">
+              Add to cart
+            </button>
+          </div>
+          <!-- products number -->
+          <div class="flex py-5 space-x-2 items-center">
+            <!-- circle -->
+            <div class="bg-green-300 rounded-full w-2.5 h-2.5"></div>
+            <div class="font-extrathin text-xs">50+ pcs. in stock</div>
+          </div>
+          <!-- buttons container -->
+          <div class="flex space-x-4 items-center">
+            <button
+              class="flex font-light text-sm py-2 px-5 border border-gray-400 rounded-md"
+            >
+              <img class="w-6 h-6 mr-3" src="./images/weight.png" />Add to cart
+            </button>
+            <button
+              class="flex font-light text-sm py-2 px-5 border border-gray-400 rounded-md"
+            >
+              <img class="w-6 h-6 mr-3" src="./images/heart.png" />Add to wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
